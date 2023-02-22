@@ -1,0 +1,11 @@
+table{
+  width: 100vw;
+  justify-content: center;
+}
+
+thead,tbody {
+    width: 100%;
+    border: 1px solid rgb(85, 78, 78);
+    
+  }
+  
