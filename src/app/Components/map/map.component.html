@@ -1,30 +1,30 @@
-<!-- <form action="post" #f="ngForm" (ngSubmit)="mapForm(f)">
+<form action="post" #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
     <h1>Map Settings</h1>
     
-    <label>Cluster Raduis</label><input type="text" [(ngModel)]="thisMap.clusterRaduis" >
+    <label>Cluster Raduis</label><input type="text"  [(ngModel)]="thisMap.clusterRaduis">
     <label>Geo Fencing</label><br>
 
     <h1>Duplication Event Configuration</h1>
-    <label>Time Buffer</label><input type="text" [(ngModel)]="thisMap.clusterRaduis" >
-    <label>Location Buffer</label><input type="text" [(ngModel)]="thisMap.clusterRaduis" ><br>
+    <label>Time Buffer</label><input type="text"  [(ngModel)]="thisMap.clusterRaduis" >
+    <label>Location Buffer</label><input type="text"  [(ngModel)]="thisMap.clusterRaduis" ><br>
 
     <h1>End Event Duration</h1>
-    <label>Duration</label><input type="text" [(ngModel)]="thisMap.clusterRaduis" ><br>
+    <label>Duration</label><input type="text"  [(ngModel)]="thisMap.clusterRaduis" ><br>
 
     <label for="">Map Type</label>
     <select name="" id="">
-    <option value="" [(ngModel)]="thisMap.clusterRaduis" >Volvo</option>
+    <option value=""  [(ngModel)]="thisMap.clusterRaduis" >Volvo</option>
     </select>
     <br>
 
     <select name="" id="">
-    <option value="" [(ngModel)]="thisMap.clusterRaduis" >Volvo</option>
+    <option value=""  [(ngModel)]="thisMap.clusterRaduis" >Volvo</option>
     </select>   
     <br>
 
     <input type="reset" value="Reset">
-    <input type="submit"   value="Save">
+    <button class="btn btn-lg btn-primary" type="submit"  >Save</button>
     <input type="submit" value="Cancel">
 
 </form>
- -->
+

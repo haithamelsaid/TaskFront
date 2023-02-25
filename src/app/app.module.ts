@@ -9,6 +9,7 @@ import { MapComponent } from './Components/map/map.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
     BrowserModule,
     NoopAnimationsModule,
     MatButtonModule,
+    FormsModule,
     MatIconModule, 
     MatTableModule,
     HttpClientModule,
