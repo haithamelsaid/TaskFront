@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { map } from '../../../Models/mapModel'
 
 @Component({
   selector: 'app-map',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  thisMap: any;
+  thisMap: map;
   // invalidRegister: boolean | undefined;
 
   constructor(private router: Router, private http: HttpClient) { }
