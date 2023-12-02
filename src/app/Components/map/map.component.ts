@@ -1,34 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { map } from '../../../Models/mapModel'
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css']
 })
-export class MapComponent implements OnInit {
-  thisMap: map;
-  // invalidRegister: boolean | undefined;
+export class MapComponent {
+  thisMap={name:Text}
 
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(
+    private router: Router,
+     private http: HttpClient,
+     ) { }
 
-  ngOnInit(): void {
-  }
-
-  onFormSubmit(f: NgForm) {
-    const thisMap: any = {
-      'clusterRaduis': f.value.clusterRaduis,
-      'isGeoFencing': f.value.isGeoFencing,
-      'timeBuffer': f.value.timeBuffer,
-      'locationBuffer': f.value.locationBuffer,
-      'duration': f.value.duration,
-      'mapTypeId': f.value.mapTypeId,
-      'mapSubTypeId': f.value.mapSubTypeId,
-    }
-    this.http.post("https://localhost:5001/api/Auth/token", thisMap).subscribe(
+  onFormSubmit() {
+    this.http.post("https://localhost:7184/api/Map", this.thisMap).subscribe(
       response => {
         console.log(response)
         console.log("ok")

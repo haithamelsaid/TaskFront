@@ -1,33 +1,10 @@
-<form action="post" #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+<form #userlogin = "ngForm"  action="post"  (ngSubmit)="onFormSubmit()">
     <div>
-        <h3>Map Settings</h3>
+        <h3>Map </h3>
     </div>
     
-    <label>Cluster Raduis : </label><input type="text"  [(ngModel)]="thisMap.clusterRaduis">
-    <label>Geo Fencing : </label><br>
 
-    <h3>Duplication Event Configuration</h3>
-    <label>Time Buffer : </label><input type="text"  [(ngModel)]="thisMap.clusterRaduis" >
-    <label>Location Buffer :</label><input type="text"  [(ngModel)]="thisMap.clusterRaduis" ><br>
+    <label>name : </label><input type="text" [(ngModel)]="thisMap.name">
 
-    <h3>End Event Duration</h3>
-    <label>Duration : </label><input type="text"  [(ngModel)]="thisMap.clusterRaduis" ><br>
-   
-   <br>
-    <select class="form-select" aria-label="Default select example" >
-        <option value="1">One</option>
-        </select>
-
-
-    <br>
-    <select class="form-select" aria-label="Default select example">
-        <option value=""  [(ngModel)]="thisMap.clusterRaduis" >One</option>
-    </select>   
-    <br>
-
-    <input type="reset" value="Reset">
     <button class="btn btn-lg btn-primary" type="submit"  >Save</button>
-    <input type="submit" value="Cancel">
-
 </form>
-

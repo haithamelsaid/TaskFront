@@ -2,26 +2,14 @@
     <thead>
       <tr>
         <th>Id</th>
-        <th>CLuster Raduis</th> 
-        <th>Geo Fencing</th>
-        <th>Time Buffer</th>
-        <th>Location Buffer</th>
-        <th>Duration</th>
-        <th>Map Type</th>
-        <th>Map Sub Type</th>
+        <th>Name</th> 
       </tr>
     </thead>
     
     <tbody  >
        <tr *ngFor="let map of maps">
         <td scope="row">{{map.id}}</td>
-        <td >{{map.clusterRaduis}}</td>
-        <td >{{map.isGeoFencing}}</td>
-        <td >{{map.timeBuffer}}</td>
-        <td >{{map.locationBuffer}}</td>
-        <td >{{map.duration}}</td>
-        <td >{{map.mapType.name}}</td>
-        <td >{{map.mapSubType.name}}</td>
+        <td >{{map.name}}</td>
     </tr>
     </tbody>
 </table>

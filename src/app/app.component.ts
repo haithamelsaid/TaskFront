@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule, Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-root',
@@ -9,14 +7,6 @@ import { Routes, RouterModule, Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'TaskFront';
-  constructor(private router: Router){}
+  constructor(){}
   
-  // clickToHome(){
-  //   this.router.navigate(['/']);
-  
-  // }
-  // clickToMap(){
-  //   this.router.navigate(['/app-map']);
-  
-  // }
 }
